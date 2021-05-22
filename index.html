@@ -2,24 +2,11 @@
 <title>TradeWith</title>
 <h2>TradeWith</h2>
 <hr size="2" width="97%" color="black">
+<div style="background-image: #D3D3D3;"></div>
 
-<html>
-<head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-
-.search {
-    height: 35px;
-    width: 300px;
-    border: 2px solid black;
-    background-color: #D3D3D3;
-    position: fixed;
-    top: 20px;
-    left: 600px;
-    textarea: search...;
-}
-
-
+<boxes>
+    <style>
 .square0 {
   height: 300px;
   width: 150px;
@@ -226,8 +213,45 @@
 <h2>Trade With</h2>
 <hr size="2" width="97%" color="black">
 </style>
+</boxes>
+
+<head>
+
+    <other>
+        <style>
+
+.search {
+    height: 35px;
+    width: 300px;
+    border: 2px solid black;
+    background-color: #D3D3D3;
+    position: fixed;
+    top: 20px;
+    left: 800px;
+}
+
+#text-position {
+   position: absolute;
+   bottom: 350px;
+   text-align: center;
+   width: 30%;
+    top: 20px;
+    left: 800px;
+
+body {
+    background-color: #FFFF99;
+}
+
+        </style>
+    </other>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 </head>
-<body>
+
+<html>
 
 <!--Boxes-->
 <div class="square0"></div>
@@ -254,10 +278,12 @@
 
 
 <div class="search"></div>
-<textarea>Search...</textarea>
-
 
 <div style="margin-top: 1000px"></div>
-</body>
+
+<div class="body"></div>
+
+<input type="search" id="search" value="" onchange="Page()">
+<input type="button" id="button" onclick="Page()" value="Search">
 
 </html>
